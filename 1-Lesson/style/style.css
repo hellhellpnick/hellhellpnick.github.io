@@ -1,0 +1,34 @@
+body
+{
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #b8b8b8;
+	font-size:11px;
+	padding-left: 10px;
+	color: #b8b8b8;
+	background-color: #3c3939;
+}
+h1
+{
+	text-align: center;
+}
+img{
+	position: absolute;
+	margin-left: 425px;
+	top:75px;
+	height: 18%;
+}
+#col{
+	color: #f00;
+	text-decoration: underline;
+}
+a
+{
+	color: #b8b8b8;
+	text-decoration: none;
+}
+a:hover{
+	color: #ddd;
+	text-decoration: underline;
+}
