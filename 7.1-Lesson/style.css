@@ -31,7 +31,6 @@
 
 }.main{
     font-family: "PT Sans", sans-serif;
-    background-image: url(images/column.png);
     width: var(--max-width);
     margin: 0 auto;
 }
@@ -51,17 +50,19 @@
     display: flex;
     padding-bottom: 187px;
 }
-.p{
+.text{
     font-size: 14px;
     width: 174px;
     color: var(--text);
-    text-align: center;
+    text-align: justify;
     padding-bottom: 94px;
+    margin: 0 30px;
     line-height: 22px;
     margin: 0 auto;
 }
 .list__item-icon{
-    margin-bottom: 43px;
+    margin: 56px 85px -10px 85px;
+    fill: #000;
 }
 .h3{
     margin-bottom: 33px;
@@ -70,10 +71,20 @@
     width: 235px;
     background-color: rgba(247, 247, 247, 0.4);
 }
+.list__item:hover svg{
+    fill: #fff;
+    transition: all 0.2s ease;
+}
+.list__item-icon:hover object{
+    fill: #fff;
+    transition: all 0.2s ease;
+}
 .list__item:hover{
     color: #fff;
     background-color: rgba(14, 200, 203, 0.6);
+    transition: color 0.2s ease;
 }
-.list__item:hover .p{
+.list__item:hover .text{
     color: #fff;
+    transition: color 0.2s ease;
 }

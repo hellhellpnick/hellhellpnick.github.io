@@ -1,0 +1,112 @@
+:root{
+    --grey: #4a4f56;
+    --dark-grey: #383f45;
+    --main-color: #888395;
+    --secondary-color: #7a7593;
+    --hover-color: #625e77;
+    --pink: #e87e75;
+    --white: #fff;
+    --checked-color: #696869;
+    --max-width: 800px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: var(--grey);
+    padding: 24px;
+    text-align: center;
+}
+.title{
+    line-height: 1;
+    margin-bottom: 8;
+    color: var(--pink);
+    font-size: 24px;
+}
+.subtitle{
+    line-height: 1;
+    color: var(--pink);
+    font-weight: 400;
+    font-size: 18px;
+  
+}
+.main{
+    background-color: var(--dark-grey);
+    flex-grow: 1;
+    padding: 48px;
+}
+.list{
+    list-style: none;
+    margin-bottom: 48px;
+    max-width: var(--max-width);
+    margin: 0 auto 48px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+.item:hover{
+    background-color: var(--hover-color);
+    border-color: var(--white);
+}
+.item:active{
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+.list__item:nth-child(odd) .item:not(:hover){
+    background-color: var(--main-color);
+}
+.list__item:nth-child(even) .item:not(:hover){
+    background-color: var(--secondary-color);
+}
+.item__content{
+    color: var(--white);
+    transition: all 0.2s ease-out;
+}
+.item__name{
+    font-size: 24px;
+}
+.item__description{
+    font-size: 14px;
+}
+.item__description::after{
+    content: " )";
+}
+.item__description::before{
+    content: "( ";
+}
+.item__input{
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+}
+.item__input:checked + .item__content{
+    text-decoration: line-through;
+    color: var(--checked-color);
+}
+.footer{
+    max-width: var(--max-width);
+    background-color: var(--grey);
+    padding: 24px;
+    text-align: center;
+    color: var(--pink);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+}
