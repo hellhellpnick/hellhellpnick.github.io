@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Caladea:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #e2e7ec;
+    --container: #fff;
+    --text: #818181;
+    --width: 360px;
+    --height: 540px;
+}
+
+.body{
+    background-color: var(--main-color);
+}
+.main{
+    width: 1120px;
+    height: 1100px;
+    margin: 91px 240px 0 240px;
+}
+.main__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+.list__item{
+    background-color: var(--container);
+    width: var(--width);
+    height: var(--height);
+    margin-bottom: 20px;
+}
+.list__item-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(/image/car_red.png);
+    width: 740px;
+    height: 540px;
+    box-shadow: inset 0 -350px 200px 10px rgba(0, 0, 0, 0.5);
+}
+.list__item-img{
+    width: 360px;
+    height: 251px;
+}
+.list__item-av{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 65px;
+    margin-left: 28px;
+}
+.list__item-text{
+    margin: 15px 0 11px 28px;
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.list__item-caption{
+    margin-left: 28px;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 30px;
+}
+.list__item-caption:nth-child(2){
+    margin-top: 62px;
+}
+.list__item-title{
+    margin-left: 43px;
+    margin-bottom: 40px;
+    color: var(--container);
+    font-size: 30px;
+    line-height: 36px;
+    width: 433px;
+    text-transform: uppercase;
+}
+.list__item-text:first-child{
+    margin-left: 43px; 
+}
