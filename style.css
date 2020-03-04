@@ -8,7 +8,7 @@ ol li{
     margin-bottom: 5px;
 }
 ol li::before{
-    content: counter(step-counter);
+   content: counter(step-counter);
     margin-right: 5px;
     font-size: 80%;
     background-color: rgb(127, 177, 253);

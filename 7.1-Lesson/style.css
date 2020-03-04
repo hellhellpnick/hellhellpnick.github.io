@@ -11,17 +11,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-.h1, .h3, .h4{
+.main__title, .heading, .subtitle{
     text-align: center;
     text-transform: uppercase;
 }
-.h1{
+.main__title{
     color: var(--h1);
     margin-bottom: 44px;
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
 }
-.h4{
+.subtitle{
     color: var(--text);
     font-weight: 700;
     padding-top: 143px;
@@ -64,7 +64,7 @@
     margin: 56px 85px -10px 85px;
     fill: #000;
 }
-.h3{
+.heading{
     margin-bottom: 33px;
 }
 .list__item{

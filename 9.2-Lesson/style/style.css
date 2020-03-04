@@ -1,0 +1,121 @@
+@import "../font/stylesheet.css";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body: #464f54;
+    --header: #181818;
+    --header-nav:#fbc02d;
+    --header-title: #767676;
+    --main-caption: #b4b4b4;
+    --main-caption-sec: #8f8f8f;
+    --main-line: #e8eced;
+}
+
+.body{
+    background-color: var(--body);
+}
+.header{
+    float: right;
+    width: 70%;
+    background-color: var(--header);
+    padding-left: 63px;
+    margin-top: 47px;
+    box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+}
+.header__caption{
+    color: var(--header-title);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-weight: 300;
+    padding-top: 50px;
+}
+.header__title{
+    color: #fff;
+    font-size: 48px;
+    padding-bottom: 21px;
+}
+.header__line{
+    border: none;
+    height: 1px;
+    background-color: rgba(232, 236, 237, 0.1);
+    margin-bottom: 50px;
+}
+.nav{
+    float: right;    
+    width: 65%;
+    background-color: var(--header-nav);
+    box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    z-index: 1;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 22px 0 17px 0;
+}
+.list__item{
+    width: 38px;
+    height: 32px;
+}   
+.list__item:nth-child(4){
+    opacity: 0.5;
+}
+.list__item-icon{
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+}
+.list__item-icon:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.main{
+    position: absolute;
+    width: 90%;
+    margin-left: 70px;
+    background-color: #fff;
+    margin-top: 149px;
+    z-index: -1;
+    padding-left: 124px;
+}
+.main__caption{
+    padding-top: 202px;
+    padding-bottom: 47px;
+    color: var(--main-caption); 
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 6.7px;
+}
+.main__title{
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 5.2px;
+    margin-bottom: 21px;
+}
+.main__title--sec{
+    color: var(--main-caption-sec);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 55px;
+}
+.main__text{
+    font-size: 27px;
+    width: 906px;
+    text-align: justify;
+    margin-bottom: 39px;
+}
+.main__line{
+    position: absolute;
+    margin-top: 149px;
+    margin-left: 137px;
+    height: 100%;
+    width: 1px;
+    margin-bottom: 50px;
+}

@@ -34,7 +34,7 @@
     height: var(--height);
     margin-bottom: 20px;
 }
-.list__item-car{
+.list__item--car{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
