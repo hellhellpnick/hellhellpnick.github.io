@@ -19,6 +19,7 @@
 
 .body{
     background-color: var(--body);
+    font-family: "proxima", sans-serif;
 }
 .header{
     float: right;
@@ -33,14 +34,14 @@
     color: var(--header-title);
     font-size: 15px;
     text-transform: uppercase;
-    font-family: "Playfair Display";
-    font-weight: 300;
+    font-weight: 100;
     padding-top: 50px;
 }
 .header__title{
     color: #fff;
     font-size: 48px;
     padding-bottom: 21px;
+    font-family: "Playfair Display", Arial;
 }
 .header__line{
     border: none;
@@ -91,6 +92,8 @@
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 6.7px;
+    font-family: "proxima";
+    font-weight: 400;
 }
 .main__title{
     font-size: 70px;
@@ -101,8 +104,7 @@
 .main__title--sec{
     color: var(--main-caption-sec);
     font-size: 30px;
-    font-style: italic;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 55px;
 }
 .main__text{
@@ -110,6 +112,7 @@
     width: 906px;
     text-align: justify;
     margin-bottom: 39px;
+    font-weight: 100;
 }
 .main__line{
     position: absolute;
