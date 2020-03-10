@@ -1,0 +1,6 @@
+node_modules/
+tmp/
+temp/
+package-lock.json
+maket.psd
+maket.png

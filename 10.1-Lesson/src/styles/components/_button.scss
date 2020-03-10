@@ -1,0 +1,11 @@
+.button{
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $button-fs;    
+    font-family: $base-font;
+    font-weight: 300;
+    background-color: $btn-color;
+    padding: 20px 43px;
+    box-shadow: $button-shadow;
+}

@@ -1,0 +1,33 @@
+.section {
+  background-color: $bg-color;
+  padding: 100px 24px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: $section-title-fs;
+    font-weight: 700;
+    color: $white;
+    line-height: 0.75;
+    margin-bottom: 42px;
+  }
+  &__description {
+    font-size: $section-description-fs;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 570px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 44px;
+  }
+  &__list {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
