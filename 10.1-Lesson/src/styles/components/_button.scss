@@ -8,4 +8,8 @@
     background-color: $btn-color;
     padding: 20px 43px;
     box-shadow: $button-shadow;
+    transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
