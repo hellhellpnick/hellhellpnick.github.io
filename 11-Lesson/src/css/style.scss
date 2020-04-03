@@ -1,0 +1,132 @@
+.body{
+    background-image: url("/images/main-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: max-content;
+}
+.main{
+    max-width: 700px;
+    margin: auto auto;
+    background-color: #111a28;
+    border: 1px solid #111a28;
+    border-radius: 15px;
+    box-shadow: 0 0 40px 1px;
+    margin-top: 160px;
+    padding-bottom: 20px;
+}
+.logo{
+    width: 65px;
+    margin-bottom: 21px;
+    &__image{
+        max-width: 65px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    &__image{
+        margin-left: 36px;
+        margin-right: 79px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__picture{
+        max-width: 329px;
+    }
+    &__content{
+        max-width: 186px;
+    }
+}
+.title{
+    font-style: 20px;
+    color: #adafb3;
+    margin-bottom: 16px;
+}
+.text{
+    font-style: 14px;
+    margin-bottom: 24px;
+    color: #262e3b;
+}
+.img__list{
+    margin-bottom: 27px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.select{
+    border: none;
+    outline: none;
+    border: 1px solid #4f5560;
+    color: #4f5560;
+    padding: 10px;
+    width: 70px;
+    margin-bottom: 29px;
+    background-color: #111a28;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+}
+.button{
+    background-color: #202835;
+    color: #4f5560;
+    border: none;
+    outline: none;
+    border: 1px solid #4f5560;
+    border-color: #4f5560;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 73px;
+}
+$style: radio;
+
+.#{$style} {
+  position: relative;
+  left: 23%;
+  cursor: pointer;
+  margin-right: 12px;
+  &--black .#{$style}__dot {
+    background-color: #1F273F;
+  }
+  &--white {
+    .#{$style}__input:checked + .#{$style}__dot {
+      border-color: red;
+    }
+    .#{$style}__dot {
+      background-color: white;
+    }
+  }
+  &--red .#{$style}__dot {
+    background-color: #E73233;
+  }
+  &--blue .#{$style}__dot {
+    background-color: #29E0E7;
+  }
+  &__input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    &:checked + .#{$style}__dot {
+      transform: scale(1.2);
+      border-color: white;
+    }
+  }
+  &__dot {
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+}
