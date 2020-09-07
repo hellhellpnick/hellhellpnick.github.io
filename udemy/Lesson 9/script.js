@@ -1,26 +1,27 @@
 "use strict";
 
-const str = "test";
+let x = 5;
+alert(x++);
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str);
+[] + false - null + true;
 
-const fruit = "Some fruit";
+//let y=1; let x = y =2;
+//alert (x);
 
-console.log(fruit.indexOf("s"));
+console.log([] + 1 + 2);
 
-const logg = "Hello world";
+alert("1"[0]);
 
-console.log(logg.slice(-6, 11));
+console.log(2 && 1 && null && 0 && undefined);
 
-console.log(logg.substring(6, 11));
+console.log(!!(1 && 2) === (1 && 2));
 
-console.log(logg.substr(6, 5));
+alert(null || (2 && 3) || 4);
 
-const num = 12.2;
-console.log(Math.round(num));
+const a = [1, 2, 3],
+  b = [1, 2, 3];
 
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+alert(+"Infinity");
+console.log("Ёжик" > "яблоко");
+
+0 || "" || 2 || undefined || true || false;

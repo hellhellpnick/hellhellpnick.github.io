@@ -1,26 +1,31 @@
 "use strict";
 
-const str = "test";
+console.log(typeof String(null));
+console.log(typeof String(4));
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str);
+console.log(typeof (5 + ""));
 
-const fruit = "Some fruit";
+const num = 5;
 
-console.log(fruit.indexOf("s"));
+console.log("https://vk.com/catalog/" + num);
 
-const logg = "Hello world";
+const fontSize = 26 + "px";
 
-console.log(logg.slice(-6, 11));
+console.log(typeof +"5");
+console.log(typeof parseInt("15px, 10"));
 
-console.log(logg.substring(6, 11));
+let answ = +prompt("Hello", "");
 
-console.log(logg.substr(6, 5));
+//0, '', null, undefined, NaN;
 
-const num = 12.2;
-console.log(Math.round(num));
+let switcher = null;
 
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+switcher = 1;
+
+if (switcher) {
+  console.log("Working...");
+}
+
+console.log(typeof Boolean(4));
+
+console.log(typeof !!"44444");
